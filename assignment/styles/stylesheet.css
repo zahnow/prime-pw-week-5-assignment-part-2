@@ -1,0 +1,23 @@
+body {
+    background-image: url(../record.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position:top center;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(30, 30, 30, .75);
+    backdrop-filter: blur(15px);
+    color: #ffffe0;
+}
+
+main {
+    background-color: rgba(200, 200, 200, .5);
+    backdrop-filter: blur(15px);
+    padding: 1em;
+}
+
+.centered-header {
+    text-align: center;
+}
