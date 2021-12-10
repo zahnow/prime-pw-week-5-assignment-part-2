@@ -10,14 +10,33 @@ header {
     background-color: rgba(30, 30, 30, .75);
     backdrop-filter: blur(15px);
     color: #ffffe0;
+    animation-name: dropInFadeIn;
+    animation-duration: .4s;
 }
 
 main {
     background-color: rgba(200, 200, 200, .5);
     backdrop-filter: blur(15px);
     padding: 1em;
+    animation-name: fadeIn;
+    animation-duration: .8s;
 }
 
 .centered-header {
     text-align: center;
+}
+
+/* Was going to try rotating the record in the background, 
+   realized that was going to be a problem when I rotated literally everything but the record, 
+   so I'm just gonna fade some stuff in instead */
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes dropInFadeIn {
+    from {transform:translateY(-10rem);
+          opacity: 0%;}
+    to {transform: translateY(0px);
+        opacity: 100%;}
 }
