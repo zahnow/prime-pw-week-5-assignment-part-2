@@ -11,7 +11,7 @@ header {
     backdrop-filter: blur(15px);
     color: #ffffe0;
     animation-name: dropInFadeIn;
-    animation-duration: .4s;
+    animation-duration: .5s;
 }
 
 main {
@@ -35,8 +35,8 @@ main {
 }
 
 @keyframes dropInFadeIn {
-    from {transform:translateY(-10rem);
-          opacity: 0%;}
-    to {transform: translateY(0px);
-        opacity: 100%;}
+    0% {transform:translateY(-10rem);
+        opacity: 0%;}
+    60% {transform: translateY(0px);}
+    100% {opacity: 100%;}
 }
